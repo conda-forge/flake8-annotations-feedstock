@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flake8-annotations-{{ version }}.tar.gz
-  sha256: e17947a48a5b9f632fe0c72682fc797c385e451048e7dfb20139f448a074cb3e
+  sha256: 0d6cd2e770b5095f09689c9d84cc054c51b929c41a68969ea1beb4b825cac515
 
 build:
   number: 0
