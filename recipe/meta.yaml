@@ -12,14 +12,10 @@ source:
 
 build:
   number: 0
-  skip: true   # [py>=40 or py2k]
-  noarch: True
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - pip
-    - python
     - poetry
   run:
     - flake8 >=3.7
