@@ -1,5 +1,5 @@
 {% set name = "flake8-annotations" %}
-{% set version = "2.5.0" %}
+{% set version = "2.6.2" %}
 
 
 package:
@@ -21,8 +21,8 @@ requirements:
     - python
     - poetry
   run:
-    - flake8 >=3.7,<3.9
-    - python
+    - flake8 >= 3.7
+    - python >= 3.6
     - typed-ast >=1.4,<2.0  # [py<38]
 
 test:
