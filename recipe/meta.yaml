@@ -21,8 +21,8 @@ requirements:
     - python
     - poetry
   run:
-    - flake8 >= 3.7
-    - python >= 3.6
+    - flake8 >=3.7
+    - python
     - typed-ast >=1.4,<2.0  # [py<38]
 
 test:
