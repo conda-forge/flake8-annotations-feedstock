@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - poetry
+    - python
   run:
     - flake8 >=3.7
     - python
