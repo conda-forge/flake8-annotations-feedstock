@@ -19,6 +19,8 @@ requirements:
     - poetry
     - python
     - pip
+    - pyopenssl >=20  # [py36 and win]
+    
   run:
     - flake8 >=3.7, <4.0
     - python
