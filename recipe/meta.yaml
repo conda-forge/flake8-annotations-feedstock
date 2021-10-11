@@ -1,5 +1,5 @@
 {% set name = "flake8-annotations" %}
-{% set version = "2.6.2" %}
+{% set version = "2.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flake8-annotations-{{ version }}.tar.gz
-  sha256: 0d6cd2e770b5095f09689c9d84cc054c51b929c41a68969ea1beb4b825cac515
+  sha256: 52e53c05b0c06cac1c2dec192ea2c36e85081238add3bd99421d56f574b9479b
 
 build:
   number: 0
@@ -23,7 +23,6 @@ requirements:
     - python
     - pip
     - pyopenssl >=20  # [py36 and win]
-    
   run:
     - flake8 >=3.7, <4.0
     - python
