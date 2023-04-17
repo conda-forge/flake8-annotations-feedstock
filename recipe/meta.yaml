@@ -1,13 +1,13 @@
 {% set name = "flake8-annotations" %}
-{% set version = "2.9.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flake8-annotations-{{ version }}.tar.gz
-  sha256: 11f09efb99ae63c8f9d6b492b75fe147fbc323179fddfe00b2e56eefeca42f57
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flake8_annotations-{{ version }}.tar.gz
+  sha256: 88c8b35a0db10b9a92be69ed3f81494509a18db1c3162551e57bc0fc35fab065
 
 build:
   noarch: python
@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7,<4.0
-    - poetry-core >=1.0.8
+    - python >=3.8,<4.0
+    - poetry-core >=1.2
     - pip
   run:
-    - python >=3.7.0,<4.0.0
+    - python >=3.8.1,<4.0.0
     - attrs >=21.4
-    - flake8 >=3.7
+    - flake8 >=5.0
 
 test:
   imports:
